@@ -152,9 +152,15 @@
             <!-- Product 12 -->
             <div class="product">
                 <img src="https://m.media-amazon.com/images/I/710MA+as5IL._SL1500_.jpg" alt="Product 12">
-                <p><a href="https://amzn.to/3UUlu3J">Portable Monitor</a></p>
-                <button class="product-button" onclick="window.location.href='https://amzn.to/3UUlu3J'">Buy Now</button>
+                <p><a href="https://amzn.to/3UUlu3J" target="_blank" rel="noopener noreferrer">Portable Monitor</a></p>
+                <button class="product-button" onclick="openInBrowser('https://amzn.to/3UUlu3J')">Buy Now</button>
             </div>
+            <script>
+                function openInBrowser(url) {
+                    // Use a safe method to redirect
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
+            </script>
         </div>
     </div>
 </body>
